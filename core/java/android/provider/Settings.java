@@ -3028,7 +3028,13 @@ public final class Settings {
         /** @hide */ public static final int HEADS_UP_TICKER_OFF = 0;
         /** @hide */ public static final int HEADS_UP_TICKER_ON = 1;
 
-	/*
+        /**
+         * Locale for secondary overlay on dialer for t9 search input
+         * @hide
+         */
+        public static final String T9_SEARCH_INPUT_LOCALE = "t9_search_input_locale";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
