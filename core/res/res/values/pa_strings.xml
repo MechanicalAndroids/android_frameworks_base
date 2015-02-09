@@ -95,6 +95,11 @@
     <!-- Notify user that they are in Lock-to-app (for devices without navbar) -->
     <string name="lock_to_app_toast_no_navbar">To unpin this screen, touch and hold the Back button.</string>
 
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_useHardwareFramework">use hardware framework</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_useHardwareFramework">Allows an app access to the CM hardware framework.</string>
+
     <!-- LiveDisplay strings -->
     <string name="live_display_title" translatable="false">LiveDisplay</string>
     <string name="live_display_auto">Automatic</string>
