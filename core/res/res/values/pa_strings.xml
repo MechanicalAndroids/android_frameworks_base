@@ -92,10 +92,6 @@
     <string name="theme_reset_notification_title">Theme reset</string>
     <string name="theme_reset_notification_body">System theme restored due to multiple app crashes.</string>
 
-    <!-- Zen mode buttons -->
-    <string name="silent_mode_priority">Priority</string>
-    <string name="silent_mode_none">None</string>
-
     <!-- Notify user that they are in Lock-to-app (for devices without navbar) -->
     <string name="lock_to_app_toast_no_navbar">To unpin this screen, touch and hold the Back button.</string>
 </resources>
