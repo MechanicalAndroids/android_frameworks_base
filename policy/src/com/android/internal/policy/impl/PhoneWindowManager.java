@@ -429,6 +429,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     int mCurrentAppOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
     boolean mHasSoftInput = false;
     boolean mTranslucentDecorEnabled = true;
+    int mBackTimeout = 2000;
 
     // Behavior of home wake
     boolean mHomeWakeScreen;
@@ -1265,6 +1266,12 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         mHandler.removeMessages(MSG_DISPATCH_SHOW_GLOBAL_ACTIONS);
         mHandler.sendEmptyMessage(MSG_DISPATCH_SHOW_GLOBAL_ACTIONS);
     }
+
+    Runnable mBackLongPress = new Runnable() {
+        public void run() {
+            unpinActivity();
+        }
+    };
 
     void showGlobalActionsInternal() {
         sendCloseSystemWindows(SYSTEM_DIALOG_REASON_GLOBAL_ACTIONS);
@@ -2785,6 +2792,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mPendingMetaAction = false;
         }
 
+        if (keyCode == KeyEvent.KEYCODE_BACK && !down) {
+            mHandler.removeCallbacks(mBackLongPress);
+        }
+
         // First we always handle the home key here, so applications
         // can never break it, although if keyguard is on, we do let
         // it handle it, because that gives us the correct 5 second
@@ -3073,6 +3084,12 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                 launchAssistAction(Intent.EXTRA_ASSIST_INPUT_HINT_KEYBOARD);
             }
             return -1;
+        } else if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (isPinned() && !hasNavigationBar()) {
+                if (down && repeatCount == 0) {
+                    mHandler.postDelayed(mBackLongPress, mBackTimeout);
+                }
+            }
         }
 
         // Shortcuts are invoked through Search+key, so intercept those here
@@ -3201,6 +3218,27 @@ public class PhoneWindowManager implements WindowManagerPolicy {
 
         // Let the application handle the key.
         return 0;
+    }
+
+    private boolean isPinned() {
+        try {
+            if (ActivityManagerNative.getDefault().isInLockTaskMode()) {
+                return true;
+            }
+        } catch (RemoteException e) {
+            //no-op
+        }
+        return false;
+    }
+
+    private void unpinActivity() {
+        try {
+            if (ActivityManagerNative.getDefault().isInLockTaskMode()) {
+                ActivityManagerNative.getDefault().stopLockTaskModeOnCurrent();
+            }
+        } catch (RemoteException e) {
+            //no-op
+        }
     }
 
     /** {@inheritDoc} */
