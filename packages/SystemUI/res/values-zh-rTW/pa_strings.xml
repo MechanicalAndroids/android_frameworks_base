@@ -19,13 +19,13 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="delete">刪除</string>
-  <string name="screenshot_delete_confirmation">已刪除螢幕擷取畫面。</string>
-  <string name="interruption_level_silent">靜音</string>
-  <string name="zen_silent_with_warning">物擾模式，鬧鈴除外。</string>
-  <string name="accessibility_quick_settings_location_battery_saving">位置回報：省電模式</string>
-  <string name="accessibility_quick_settings_location_gps_only">位置回報：GPS模式</string>
-  <string name="accessibility_quick_settings_location_high_accuracy">位置回報：精確模式</string>
-  <string name="quick_settings_location_battery_saving_label">省電</string>
+  <string name="screenshot_delete_confirmation">屏幕截圖已刪除.</string>
+  <string name="interruption_level_silent">静音</string>
+  <string name="zen_silent_with_warning">沒有中斷，除了報警。</string>
+  <string name="accessibility_quick_settings_location_battery_saving">位置回報：節約耗電量</string>
+  <string name="accessibility_quick_settings_location_gps_only">位置回報：僅限裝置</string>
+  <string name="accessibility_quick_settings_location_high_accuracy">位置回報：高精確度</string>
+  <string name="quick_settings_location_battery_saving_label">節約耗電量</string>
   <string name="quick_settings_location_gps_only_label">僅限GPS</string>
   <string name="quick_settings_location_high_accuracy_label">高精確度</string>
   <string name="quick_settings_location_detail_title">定位</string>
@@ -37,4 +37,5 @@
   <string name="quick_settings_location_detail_mode_battery_saving_description">使用Wi-Fi及電信定位</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">使用GPS定位</string>
   <string name="heads_up_snooze_message">Heads up 已被停用 <xliff:g id="number">%d</xliff:g> 分鐘</string>
+  <string name="screen_pinning_description_no_navbar">這樣，直到你解鎖，它在視圖中。觸摸並按住後退按鈕以取消對固定。</string>
 </resources>

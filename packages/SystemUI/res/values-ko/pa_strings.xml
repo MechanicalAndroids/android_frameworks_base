@@ -37,4 +37,5 @@
   <string name="quick_settings_location_detail_mode_battery_saving_description">Wi\u2011Fi 및 셀룰러 네트워크를 사용하여 위치 결정</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">GPS를 사용하여 위치 결정</string>
   <string name="heads_up_snooze_message">헤드업을 <xliff:g id="number">%d</xliff:g> 분 동안 사용할 수 없습니다.</string>
+  <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch and hold the Back button to unpin.</string>
 </resources>

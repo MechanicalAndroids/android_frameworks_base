@@ -37,4 +37,5 @@
   <string name="quick_settings_location_detail_mode_battery_saving_description">Wi-Fi en mobiele netwerken gebruiken om locatie te bepalen</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">Gebruik GPS om je locatie te bepalen</string>
   <string name="heads_up_snooze_message">Heads up is uitgeschakeld voor <xliff:g id="number">%d</xliff:g> minuten.</string>
+  <string name="screen_pinning_description_no_navbar">Dit houdt het in beeld totdat je het losmaakt. Druk en houdt de Terug knop ingedrukt om los te maken.</string>
 </resources>
