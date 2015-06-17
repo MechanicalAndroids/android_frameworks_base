@@ -227,6 +227,8 @@ public class LocationTile extends QSTile<QSTile.BooleanState> {
         @Override
         public View createDetailView(Context context, View convertView, ViewGroup parent) {
             mDetails = QSDetailItemsList.convertOrInflate(context, convertView, parent);
+            mDetails.setEmptyState(R.drawable.ic_signal_location_disable,
+                    R.string.accessibility_quick_settings_location_off);
             mAdapter = new LocationTile.AdvancedLocationAdapter(context);
             mDetails.setAdapter(mAdapter);
 
