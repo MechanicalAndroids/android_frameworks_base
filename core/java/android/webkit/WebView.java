@@ -53,6 +53,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.util.Map;
 
+import org.codeaurora.Performance;
+
 /**
  * <p>A View that displays web pages. This class is the basis upon which you
  * can roll your own web browser or simply display some online content within your Activity.
@@ -268,6 +270,8 @@ public class WebView extends AbsoluteLayout
     // build target is JB MR2 or newer. Defaults to false, and is
     // set in the WebView constructor.
     private static volatile boolean sEnforceThreadChecking = false;
+
+    private Performance mPerf = new Performance();
 
     /**
      *  Transportation object for returning WebView across thread boundaries.
@@ -1410,6 +1414,7 @@ public class WebView extends AbsoluteLayout
      * Note that this differs from pauseTimers(), which affects all WebViews.
      */
     public void onPause() {
+        mPerf.perfLockRelease();
         checkThread();
         if (TRACE) Log.d(LOGTAG, "onPause");
         mProvider.onPause();
@@ -1419,6 +1424,7 @@ public class WebView extends AbsoluteLayout
      * Resumes a WebView after a previous call to onPause().
      */
     public void onResume() {
+        mPerf.perfLockAcquire(0, 0x8fb, 0x3dff);
         checkThread();
         if (TRACE) Log.d(LOGTAG, "onResume");
         mProvider.onResume();
