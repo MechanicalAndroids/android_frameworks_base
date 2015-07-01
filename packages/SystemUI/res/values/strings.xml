@@ -485,6 +485,28 @@
     <string name="accessibility_quick_settings_immersive_mode_changed_on">Immersive mode turned on</string>
     <string name="accessibility_quick_settings_immersive_mode_changed_off">Immersive mode turned off</string>
 
+    <!-- Content description of the LiveDisplay tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_off">LiveDisplay off.</string>
+    <!-- Content description of the LiveDisplay tile in quick settings when auto (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: auto mode.</string>
+    <!-- Content description of the LiveDisplay tile in quick settings when day (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_day">LiveDisplay: day mode.</string>
+    <!-- Content description of the LiveDisplay tile in quick settings when night (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_night">LiveDisplay: night mode.</string>
+    <!-- Content description of the LiveDisplay tile in quick settings when outdoor (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: outdoor mode.</string>
+
+    <!-- Announcement made when LiveDisplay changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay turned off.</string>
+    <!-- Announcement made when LiveDisplay changes to auto (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay changed to auto mode.</string>
+    <!-- Announcement made when LiveDisplay changes to day (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay changed to day mode.</string>
+    <!-- Announcement made when LiveDisplay changes to night (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay changed to night mode.</string>
+    <!-- Announcement made when LiveDisplay changes to outdoor (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay changed to outdoor mode.</string>
+
     <!-- Content description of the display brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_brightness">Display brightness</string>
 

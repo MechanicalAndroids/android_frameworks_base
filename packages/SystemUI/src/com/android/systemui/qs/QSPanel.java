@@ -31,6 +31,7 @@ import android.content.res.Resources;
 import android.graphics.Point;
 import android.os.Handler;
 import android.os.Message;
+import android.os.UserHandle;
 import android.provider.Settings.Secure;
 import android.util.AttributeSet;
 import android.util.TypedValue;
