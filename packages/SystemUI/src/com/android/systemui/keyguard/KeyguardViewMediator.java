@@ -1309,9 +1309,6 @@ public class KeyguardViewMediator extends SystemUI {
             // If the stream is muted, don't play the sound
             if (mAudioManager.isStreamMute(mMasterStreamType)) return;
 
-            // If music is playing, don't play the sound
-            if (mAudioManager.isMusicActive()) return;
-
             mLockSoundStreamId = mLockSounds.play(soundId,
                     mLockSoundVolume, mLockSoundVolume, 1/*priortiy*/, 0/*loop*/, 1.0f/*rate*/);
         }
