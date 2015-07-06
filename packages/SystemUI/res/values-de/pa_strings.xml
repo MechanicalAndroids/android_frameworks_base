@@ -37,5 +37,5 @@
   <string name="quick_settings_location_detail_mode_battery_saving_description">Wi\u2011Fi- und Mobilfunknetze zur Standortbestimmung verwenden</string>
   <string name="quick_settings_location_detail_mode_sensors_only_description">GPS zur Standortbestimmung verwenden</string>
   <string name="heads_up_snooze_message">Heads-Up ist für <xliff:g id="number">%d</xliff:g> Minuten deaktiviert.</string>
-  <string name="screen_pinning_description_no_navbar">This keeps it in view until you unpin. Touch and hold the Back button to unpin.</string>
+  <string name="screen_pinning_description_no_navbar">Das wird so lange angezeigt, bis du es unpinnst. Berühre es und halte den Zurücknopf zum unpinnen.</string>
 </resources>
