@@ -16,6 +16,7 @@
 
 package com.android.systemui.statusbar.phone;
 
+import android.provider.Settings;
 import static android.provider.Settings.Secure.QS_TILES;
 
 import android.app.AlarmManager;
